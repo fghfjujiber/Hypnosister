@@ -26,9 +26,9 @@
         [path stroke];
     }
     
-//    UIImage *logoImage = [UIImage imageNamed:@"JCM_logo.png"];
-//    CGRect center = CGRectMake(self.center.x-54, self.center.y-22, 109, 45);
-//    [logoImage drawInRect:center];
+    UIImage *logoImage = [UIImage imageNamed:@"JCM_logo.png"];
+    CGRect center = CGRectMake(self.center.x-54, self.center.y-22, 109, 45);
+    [logoImage drawInRect:center];
 }
 
 @end
