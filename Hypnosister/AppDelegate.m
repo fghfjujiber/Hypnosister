@@ -25,17 +25,22 @@
     HypnosisterViewController *VC = [[HypnosisterViewController alloc]init];
     self.window.rootViewController = VC;
     
-    CGRect firstFrame = self.window.bounds;
-    JCMHypnosisView *firstRect = [[JCMHypnosisView alloc]initWithFrame:firstFrame];
-    firstRect.backgroundColor = [UIColor clearColor];
+    CGRect screenRect = self.window.bounds;
+    CGRect bigRect = screenRect;
+    bigRect.size.width *= 2.0;
     
-    [self.window addSubview:firstRect];
+    UIScrollView * scrollRect = [[UIScrollView alloc]initWithFrame:screenRect];
+    [scrollRect setPagingEnabled:YES];
+    [VC.view addSubview:scrollRect];
     
-//    CGRect secondFrame = CGRectMake(30, 30, 30, 30);
-//    JCMHypnosisView *secondRect = [[JCMHypnosisView alloc]initWithFrame:secondFrame];
-//    secondRect.backgroundColor = [UIColor colorWithRed:1 green:127.0/255.0 blue:36.0/255.0 alpha:1];
-//    
-//    [firstRect addSubview:secondRect];
+    JCMHypnosisView *backRect = [[JCMHypnosisView alloc]initWithFrame:screenRect];
+    [scrollRect addSubview:backRect];
+
+    screenRect.origin.x += screenRect.size.width;
+    JCMHypnosisView *abackRect = [[JCMHypnosisView alloc]initWithFrame:screenRect];
+    [scrollRect addSubview:abackRect];
+    
+    scrollRect.contentSize = bigRect.size;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
