@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "JCMHypnosisView.h"
+#import "HypnosisterViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    HypnosisterViewController *VC = [[HypnosisterViewController alloc]init];
+    self.window.rootViewController = VC;
+    
+    CGRect firstFrame = self.window.bounds;
+    JCMHypnosisView *firstRect = [[JCMHypnosisView alloc]initWithFrame:firstFrame];
+    firstRect.backgroundColor = [UIColor clearColor];
+    
+    [self.window addSubview:firstRect];
+    
+//    CGRect secondFrame = CGRectMake(30, 30, 30, 30);
+//    JCMHypnosisView *secondRect = [[JCMHypnosisView alloc]initWithFrame:secondFrame];
+//    secondRect.backgroundColor = [UIColor colorWithRed:1 green:127.0/255.0 blue:36.0/255.0 alpha:1];
+//    
+//    [firstRect addSubview:secondRect];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

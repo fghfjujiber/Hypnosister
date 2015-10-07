@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		C6C3C4771BC4F3D8008AF126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3C4761BC4F3D8008AF126 /* main.m */; };
 		C6C3C47A1BC4F3D8008AF126 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3C4791BC4F3D8008AF126 /* AppDelegate.m */; };
-		C6C3C47D1BC4F3D8008AF126 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3C47C1BC4F3D8008AF126 /* ViewController.m */; };
-		C6C3C4801BC4F3D8008AF126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C3C47E1BC4F3D8008AF126 /* Main.storyboard */; };
 		C6C3C4821BC4F3D8008AF126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C3C4811BC4F3D8008AF126 /* Assets.xcassets */; };
-		C6C3C4851BC4F3D8008AF126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C3C4831BC4F3D8008AF126 /* LaunchScreen.storyboard */; };
+		C6C3C4911BC4F4D8008AF126 /* JCMHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3C4901BC4F4D8008AF126 /* JCMHypnosisView.m */; settings = {ASSET_TAGS = (); }; };
+		C6C3C4941BC4F76F008AF126 /* HypnosisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C3C4931BC4F76F008AF126 /* HypnosisterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C6C3C4961BC5034A008AF126 /* JCM_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C6C3C4951BC5034A008AF126 /* JCM_logo.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,13 @@
 		C6C3C4761BC4F3D8008AF126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C6C3C4781BC4F3D8008AF126 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6C3C4791BC4F3D8008AF126 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C6C3C47B1BC4F3D8008AF126 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C6C3C47C1BC4F3D8008AF126 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C6C3C47F1BC4F3D8008AF126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6C3C4811BC4F3D8008AF126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C6C3C4841BC4F3D8008AF126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6C3C4861BC4F3D8008AF126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6C3C48F1BC4F4D8008AF126 /* JCMHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCMHypnosisView.h; path = ../JCMHypnosisView.h; sourceTree = "<group>"; };
+		C6C3C4901BC4F4D8008AF126 /* JCMHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCMHypnosisView.m; path = ../JCMHypnosisView.m; sourceTree = "<group>"; };
+		C6C3C4921BC4F76F008AF126 /* HypnosisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisterViewController.h; sourceTree = "<group>"; };
+		C6C3C4931BC4F76F008AF126 /* HypnosisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisterViewController.m; sourceTree = "<group>"; };
+		C6C3C4951BC5034A008AF126 /* JCM_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JCM_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +59,14 @@
 		C6C3C4741BC4F3D8008AF126 /* Hypnosister */ = {
 			isa = PBXGroup;
 			children = (
+				C6C3C48F1BC4F4D8008AF126 /* JCMHypnosisView.h */,
+				C6C3C4901BC4F4D8008AF126 /* JCMHypnosisView.m */,
 				C6C3C4781BC4F3D8008AF126 /* AppDelegate.h */,
 				C6C3C4791BC4F3D8008AF126 /* AppDelegate.m */,
-				C6C3C47B1BC4F3D8008AF126 /* ViewController.h */,
-				C6C3C47C1BC4F3D8008AF126 /* ViewController.m */,
-				C6C3C47E1BC4F3D8008AF126 /* Main.storyboard */,
+				C6C3C4921BC4F76F008AF126 /* HypnosisterViewController.h */,
+				C6C3C4931BC4F76F008AF126 /* HypnosisterViewController.m */,
+				C6C3C4951BC5034A008AF126 /* JCM_logo.png */,
 				C6C3C4811BC4F3D8008AF126 /* Assets.xcassets */,
-				C6C3C4831BC4F3D8008AF126 /* LaunchScreen.storyboard */,
 				C6C3C4861BC4F3D8008AF126 /* Info.plist */,
 				C6C3C4751BC4F3D8008AF126 /* Supporting Files */,
 			);
@@ -136,9 +138,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C3C4851BC4F3D8008AF126 /* LaunchScreen.storyboard in Resources */,
 				C6C3C4821BC4F3D8008AF126 /* Assets.xcassets in Resources */,
-				C6C3C4801BC4F3D8008AF126 /* Main.storyboard in Resources */,
+				C6C3C4961BC5034A008AF126 /* JCM_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +150,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C3C47D1BC4F3D8008AF126 /* ViewController.m in Sources */,
 				C6C3C47A1BC4F3D8008AF126 /* AppDelegate.m in Sources */,
+				C6C3C4941BC4F76F008AF126 /* HypnosisterViewController.m in Sources */,
 				C6C3C4771BC4F3D8008AF126 /* main.m in Sources */,
+				C6C3C4911BC4F4D8008AF126 /* JCMHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C6C3C47E1BC4F3D8008AF126 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6C3C47F1BC4F3D8008AF126 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C6C3C4831BC4F3D8008AF126 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6C3C4841BC4F3D8008AF126 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C6C3C4871BC4F3D8008AF126 /* Debug */ = {
